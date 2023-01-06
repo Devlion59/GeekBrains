@@ -18,16 +18,20 @@ public class MainApp {
         doRun(animals, 250);
         System.out.println("\nRun 150");
         doRun(animals, 150);
+        System.out.println("\nRun -50");
+        doRun(animals, -50);
         System.out.println("\nSwim 15");
         doSwim(animals, 15);
-        System.out.println("\nSwim5");
+        System.out.println("\nSwim 5");
         doSwim(animals, 5);
+        System.out.println("\nSwim -5");
+        doSwim(animals, -5);
 
-        System.out.printf("\nAnimal: %d\n", Animal.getAnimalCount());
-        System.out.printf("Dog: %d\n", Dog.getDogCount());
-        System.out.printf("Cat: %d\n", Cat.getCatCount());
-        System.out.printf("DomesticCat: %d\n", DomesticCat.getDomesticCatCount());
-        System.out.printf("Tiger: %d\n", Tiger.getTigerCount());
+        System.out.printf("\nAnimal: %d\n", Animal.getCount());
+        System.out.printf("Dog: %d\n", Dog.getCount());
+        System.out.printf("Cat: %d\n", Cat.getCount());
+        System.out.printf("DomesticCat: %d\n", DomesticCat.getCount());
+        System.out.printf("Tiger: %d\n", Tiger.getCount());
     }
 
     public static void doRun(Animal[] animals, int distance){
