@@ -49,6 +49,4 @@ public abstract class Animal {
                                                          : "Для " + getType() + " "  + getName() + " расстояние слишком большое";
         System.out.println(text);
     }
-
-
 }

@@ -43,6 +43,4 @@ public class MainApp {
         for (Animal animal : animals)
             animal.swim(distance);
     }
-
-
 }
