@@ -3,7 +3,7 @@ package com.geekbrains.lesson3.homework;
 public class MainAppHomeWork {
 
     public static void main(String[] args) {
-        String[][] array = {
+        String[][] matrix = {
                 {"1", "2", "3", "4"},
                 {"5", "6", "7", "8"},
                 {"9", "10", "11", "12"},
@@ -11,9 +11,9 @@ public class MainAppHomeWork {
         };
 
         try {
-            matrixSum(array);
+            matrixSum(matrix);
         } catch (MyArraySizeException sizeException) {
-            System.out.println("Неверная размерность массива");
+            System.out.println("Неверная размерность матрицы");
         } catch (MyArrayDataException dataException) {
             System.out.println(dataException.getMessage());
         }
@@ -21,7 +21,7 @@ public class MainAppHomeWork {
 
 
     public static void matrixSum(String[][] matrix) {
-        if (!isMatrix(matrix))
+        if (!isCorrectMatrix(matrix, 4, 4))
             throw new MyArraySizeException();
         int sum = 0;
         int row = 0;
@@ -41,12 +41,12 @@ public class MainAppHomeWork {
         }
     }
 
-    public static boolean isMatrix(String[][] matrix) {
-        if (matrix.length != 4)
+    public static boolean isCorrectMatrix(String[][] matrix, int row, int column) {
+        if (matrix.length != row)
             return false;
         else {
             for (String[] strings : matrix) {
-                if (strings.length != 4)
+                if (strings.length != column)
                     return false;
             }
         }
