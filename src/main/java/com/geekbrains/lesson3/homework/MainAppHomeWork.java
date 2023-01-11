@@ -9,7 +9,6 @@ public class MainAppHomeWork {
                 {"9", "10", "11", "12"},
                 {"13", "14", "15", "16"}
         };
-
         try {
             matrixSum(matrix);
         } catch (MyArraySizeException sizeException) {
@@ -37,7 +36,7 @@ public class MainAppHomeWork {
         } catch (NumberFormatException e) {
             throw new MyArrayDataException(row, column, matrix);
         } finally {
-            System.out.println(sum);
+            System.out.println("Сумма значений матрицы: " + sum);
         }
     }
 
