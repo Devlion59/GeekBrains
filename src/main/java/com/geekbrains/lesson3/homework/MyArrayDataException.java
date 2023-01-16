@@ -1,6 +1,6 @@
 package com.geekbrains.lesson3.homework;
 
-public class MyArrayDataException extends NumberFormatException {
+public class MyArrayDataException extends MyArrayException {
 
     private int row;
     private int column;

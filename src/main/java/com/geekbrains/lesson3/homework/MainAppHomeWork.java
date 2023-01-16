@@ -11,10 +11,8 @@ public class MainAppHomeWork {
         };
         try {
             matrixSum(matrix);
-        } catch (MyArraySizeException sizeException) {
-            System.out.println("Неверная размерность матрицы");
-        } catch (MyArrayDataException dataException) {
-            System.out.println(dataException.getMessage());
+        } catch (MyArrayException arrayException) {
+            System.out.println(arrayException.getMessage());
         }
     }
 
@@ -25,19 +23,20 @@ public class MainAppHomeWork {
         int sum = 0;
         int row = 0;
         int column = 0;
-        try {
-            for (int i = 0; i < matrix.length; i++) {
-                row = i;
-                for (int j = 0; j < matrix[i].length; j++) {
-                    column = j;
+        for (int i = 0; i < matrix.length; i++) {
+            row = i;
+            for (int j = 0; j < matrix[i].length; j++) {
+                column = j;
+                try {
                     sum += Integer.parseInt(matrix[i][j]);
+                    //можно использовать регулярное выражение для проверки, что строка содержит только символы. не надо будет ловить исключение NumberFormatExc...
+                } catch (NumberFormatException e) {
+                    System.out.println("Сумма значений матрицы: " + sum);
+                    throw new MyArrayDataException(row, column, matrix);
                 }
             }
-        } catch (NumberFormatException e) {
-            throw new MyArrayDataException(row, column, matrix);
-        } finally {
-            System.out.println("Сумма значений матрицы: " + sum);
         }
+        System.out.println("Сумма значений матрицы: " + sum);
     }
 
     public static boolean isCorrectMatrix(String[][] matrix, int row, int column) {
