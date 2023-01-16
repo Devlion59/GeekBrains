@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39895e28-091e-42fa-b133-e88a44832182" name="Changes" comment="less3 exceptions homework v1.2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MyArrayException.java" afterDir="false" />
+    <list default="true" id="39895e28-091e-42fa-b133-e88a44832182" name="Changes" comment="less3 exceptions homework v1.3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson4/BoxWithNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson4/GenBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson4/Generics_Collections" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson4/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson4/SimpleBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MainAppHomeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MainAppHomeWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MyArrayDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MyArrayDataException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MyArraySizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson3/homework/MyArraySizeException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673457222109</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="less3 exceptions homework v1.3">
+      <created>1673881937664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673881937664</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +233,7 @@
     <MESSAGE value="less3 exceptions homework" />
     <MESSAGE value="less3 exceptions homework v1.1" />
     <MESSAGE value="less3 exceptions homework v1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="less3 exceptions homework v1.2" />
+    <MESSAGE value="less3 exceptions homework v1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="less3 exceptions homework v1.3" />
   </component>
 </project>
